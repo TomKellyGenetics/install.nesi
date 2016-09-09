@@ -1,7 +1,7 @@
 Installing R packages on NeSI
 =========
 
-These scripts are designed to facilitate installation of R software packages on the NeSI Pan Cluster 
+These scripts are designed to facilitate installation of R software packages on the NeSI Pan Cluster. These take as many packages as inputs as given, allowing the installation of a single package or submission of multiple packages simultaneously.
 
 Installing R packages in the terminal
 ------------
@@ -24,11 +24,33 @@ install.sh <package1> <package2> <package>
 Installing R packages via slurm on the Cluster
 ------------
 
+This installs CRAN packages specified into R as a slurm job:
+
+```shell
+sbatch install.sl <package1> <package2> <package>
+```
+
+Bioconductor R Packages via slurm
+------------
+
+This installs Bioconductor packages specified into R as a slurm job:
+
+```shell
+sbatch install_bioconductor.sl <user1/repo1> <user2/repo2> <user3/repo3>
+```
+
+GitHub R packages via slurm
+------------
+
 This installs the packages specified into R as a slurm job:
 
 ```shell
 sbatch install.sl <package1> <package2> <package>
 ```
+
+
+
+
 
 ##Configuring slurm
 
