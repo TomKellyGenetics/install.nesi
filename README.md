@@ -45,7 +45,7 @@ GitHub R packages via slurm
 This installs the packages specified into R as a slurm job:
 
 ```shell
-sbatch install.sl <package1> <package2> <package>
+sbatch install_github.sl <package1> <package2> <package>
 ```
 
 
