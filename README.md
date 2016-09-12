@@ -71,3 +71,10 @@ srun Rscript install.R "$@"
 ```
 
 The default settings here are to facilitate rapid queued installations for installing small packages. Note however that installing a package includes loading the data included and may require more memory, particularly for bioconductor packages.
+
+
+###Source
+
+Based on functions provided by NeSI (Markus Binsteiner):
+
+* https://github.com/nesi/r-dependencies/blob/develop/dependencies/R/dependencies.R
