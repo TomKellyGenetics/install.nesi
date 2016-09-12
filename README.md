@@ -48,7 +48,7 @@ This installs the packages specified into R as a slurm job:
 sbatch install_github.sl <package1> <package2> <package>
 ```
 
-
+Note that for installing from a private github repo you will need to add you personal access token (PAT) as the `auth_token` argument in `install_github.sl`.
 
 
 
@@ -69,3 +69,5 @@ Note here that you will need to configure slum with the appropriate settings for
 module load R/3.3.0-intel-2015a
 srun Rscript install.R "$@"
 ```
+
+The default settings here are to facilitate rapid queued installations for installing small packages. Note however that installing a package includes loading the data included and may require more memory, particularly for bioconductor packages.
