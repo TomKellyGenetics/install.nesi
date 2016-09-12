@@ -7,6 +7,6 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=25M
-module load R/3.1.1-goolf-1.5.14
+module load R/3.3.0-intel-2015a
 srun Rscript install_bioconductor.R "$@"
 
