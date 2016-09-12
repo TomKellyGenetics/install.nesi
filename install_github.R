@@ -40,7 +40,7 @@ function(dependency)
     # install package
     if(dependency %in% rownames(installed.packages()) == FALSE) {
               install_github(dependency,lib=userdir, siteRepos=nz_repo, dependencies = TRUE)
-               library(dependency, lib.loc=userdir, character.only = TRUE)
+              library(strsplit(dependency, split="/")[[1]][2], lib.loc=userdir, character.only = TRUE)
         } else {
                print(paste("Package already installed: ", dependency))
         }
