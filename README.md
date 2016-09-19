@@ -97,6 +97,20 @@ More information on the modules supported by the NeSI Pan cluster can be found b
 * https://github.com/nesi/applications/tree/master/R/modules/Auckland/pan 
 * https://support.nesi.org.nz/hc/en-gb/articles/209338087-R#available-modules
 
+Updating R packages in the terminal
+------------
+
+This updates the CRAN packages specified into R from the terminal:
+
+```shell
+sbatch update.sl <package1> <package2> <package>
+```
+
+Alternatively, this script defaults to updating all packages in the personal library:
+
+```shell
+sbatch update.sl
+```
 
 ###Source
 
