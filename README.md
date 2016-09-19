@@ -86,6 +86,12 @@ ls /home/<user.name>/R/x86_64-pc-linux-gnu-library/3.3
 
 Note that some packages are already supported by "R modules" on NeSI and will be available with `library()` without a user install. Most notably these include `snow` and `Rmpi` to run parallel code on NeSI. This also includes a number of base, stats, and Bioinformatics packages. These will not be installed in a personal library as they are already supported by NeSI.
 
+The following command will list the available R modules on NeSI:
+
+```shell
+ module avail | grep "R/"
+```
+
 More information on the modules supported by the NeSI Pan cluster can be found below: 
 
 * https://github.com/nesi/applications/tree/master/R/modules/Auckland/pan 
