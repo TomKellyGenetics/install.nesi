@@ -72,6 +72,16 @@ srun Rscript install.R "$@"
 
 The default settings here are to facilitate rapid queued installations for installing small packages. Note however that installing a package includes loading the data included and may require more memory, particularly for bioconductor packages.
 
+##Installed packages
+
+Packages will be installed in a personal library under your nesi user account if they are not included in the R module you have requested in the slurm file. Note that if you installing large packages (e.g., annotation packages on Bionconductor) this will be limited by your user quote, not your project, and you may need to request an increase in user disk quota from support@nesi.org.nz.
+
+You can get a complete list of the personal packages you have installed (for a particular version of R) under `~/R`. For instance:
+
+```shell
+ls /home/<user.name>/R/x86_64-pc-linux-gnu-library/3.3
+```
+
 
 ###Source
 
